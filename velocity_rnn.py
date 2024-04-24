@@ -68,7 +68,6 @@ num_batches = inputs.size(0) // batch_size
 inputs = inputs[:num_batches * batch_size].view(batch_size, num_batches, -1).transpose(0, 1)
 targets = targets[:num_batches * batch_size].view(batch_size, num_batches, -1).transpose(0, 1)
 
-
 # Training loop
 losses = []
 epochs = 100
